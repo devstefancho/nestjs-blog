@@ -5,6 +5,11 @@ import { MarkdownService } from './markdown.service';
 export class MarkdownController {
   constructor(private readonly markdownService: MarkdownService) {}
 
+  @Get('hello')
+  async hello(): Promise<string> {
+    return 'Hello World!';
+  }
+
   @Get(':slug')
   async getMarkdownFile(
     @Param('slug') slug: string,
