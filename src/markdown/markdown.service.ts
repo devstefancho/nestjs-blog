@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import * as fs from 'fs';
 import * as path from 'path';
 import { marked } from 'marked';
-import * as matter from 'gray-matter';
+import matter from 'gray-matter';
 
 @Injectable()
 export class MarkdownService {
